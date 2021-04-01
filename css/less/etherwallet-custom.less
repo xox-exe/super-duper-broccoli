@@ -1,0 +1,255 @@
+/* Start Custom Styles */
+
+body, html {
+  height: 100%;
+}
+
+/* Make Bootstrap Go Full Width */
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+textarea {
+  resize:vertical;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+h1, h2, .h1, .h2 {
+  font-weight: 300;
+}
+
+.radio label {
+  padding-right: 15px;
+}
+
+footer {
+  background-color: @ether-navy;
+  color: white;
+  margin-top: 50px;
+}
+
+.well {
+  h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+    margin-top: 0;
+  }
+}
+
+ul, ol {
+  margin-top: 1em;
+  margin-bottom: 1.2em;
+}
+
+a {
+  cursor: pointer;
+}
+
+header {
+  @media screen and (max-width: @screen-sm) {
+    text-align: center;
+  }
+  p {
+    float: right;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 23px;
+    @media screen and (max-width: @screen-sm) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  img {
+    float: left;
+    @media screen and (max-width: @screen-sm) {
+      float: none;
+    }
+  }
+}
+
+#paneHelp {
+  h3 {
+    margin-top: 2em;
+  }
+}
+
+.announcement {
+  text-align: center;
+  padding: 5px 0;
+  background-color: @brand-primary;
+  color: white;
+  display: block;
+  &:hover,
+  &:focus {
+    color: darken(white, 5%);
+    text-decoration: none;
+    background-color: darken(@brand-primary, 5%);
+  }
+}
+
+.annoucement-warning {
+  text-align: center;
+  padding: 5px 0;
+  background-color: @brand-danger;
+  color: white;
+  display: block;
+  &:hover,
+  &:focus {
+    color: darken(white, 5%);
+    text-decoration: none;
+    background-color: darken(@brand-danger, 5%);
+  }
+}
+
+.annoucement-danger {
+  background-color: @brand-danger;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  a {
+    text-decoration: underline;
+    color:white;
+  }
+  a:hover,
+  a:focus {
+    color: darken(white, 5%);
+    background: transparent;
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.address-identicon-container {
+  padding-left: 0;
+  padding-top: 10px;
+  text-align: right;
+  @media screen and (max-width: @grid-float-breakpoint) {
+    padding-left: 25px;
+    padding-top: 0;
+  }
+}
+
+#addressIdenticon {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: inset rgba(255, 255, 255, 0.5) 0 2px 2px, inset rgba(0, 0, 0, 0.6) 0 -1px 8px;
+}
+
+.wrap {
+  word-wrap: break-word;
+}
+
+
+.form-control[readonly] {
+  background-color: #efefef;
+}
+
+.bigger-on-mobile.form-control[readonly] {
+  height: 120px;
+}
+
+
+.account-help-icon {
+  position: relative;
+  display: inline-block;
+}
+.account-help-text {
+  display: none;
+  position: absolute;
+  font-size: 13px;
+  background: white;
+  padding: 5px;
+  width: 280px;
+  top: -5px;
+  left: 30px;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(100,100,100,.2);
+  z-index: 999;
+}
+
+.account-help-icon:hover .account-help-text {
+  display: block;
+}
+
+@media screen and (max-width:767px) {
+  .account-help-icon {
+    width: 100%;
+    svg {
+      float: left;
+      margin-right: 5px;
+      margin-top: 7px;
+    }
+    .account-help-text {
+      display: block;
+      position: static;
+      width: 100%;
+      border: none;
+      box-shadow: 0px 0px 0px #fff;
+      padding: 5px 0px 0px 30px;
+      font-weight: 300;
+    }
+  }
+  .form-group {
+    margin: 15px 0;
+  }
+}
+
+
+.form-control,
+#accountAddress,
+#accountBalance,
+#accountBalanceUsd,
+#accountBalanceEur,
+#accountBalanceBtc,
+#accountBalancePopMB-0,
+#accountBalancePopMB-2,
+#accountAddressMainTbl-1 {
+  font-family: @font-family-monospace;
+  font-weight: normal;
+}
+
+.mono {
+    font-family: @font-family-monospace;
+}
+
+.collapseButton {
+  cursor: pointer;
+  width: 15px;
+  margin: 0 0 0 -21px;
+  display: inline-block;
+  padding: 0 5px;
+}
