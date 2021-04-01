@@ -1,4 +1,4 @@
-FROM node:9.5-alpine as builder
+FROM node:9.11-alpine as builder
 RUN apk add --update git python make g++ libnotify openssl
 RUN npm install -g gulp-cli
 
