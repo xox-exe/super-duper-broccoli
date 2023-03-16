@@ -5,7 +5,7 @@
   "author": "MyEtherWallet",
   "license": "ISC",
   "devDependencies": {
-    "open": "0.0.5"
+    "open": "8.4.2"
   },
   "bin": {
     "mew": "bin/startMEW.js"
